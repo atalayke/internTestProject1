@@ -288,6 +288,7 @@
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\GrantsModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="principalInvestigators.aspx.cs">
       <DependentUpon>principalInvestigators.aspx</DependentUpon>
