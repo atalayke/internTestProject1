@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="principalInvestigators.aspx.cs" Inherits="InternTestProject.principalInvestigators" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:HyperLink NavigateUrl="~/AddPI" Text="Add New PI" runat="server"</asp:HyperLink>
     <asp:GridView runat="server" ID="piGrid"
         ItemType="InternTestProject.Models.Investigator"
         DataKeyNames="PI_ID"
