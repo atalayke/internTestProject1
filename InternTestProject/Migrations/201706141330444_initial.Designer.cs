@@ -13,7 +13,7 @@ namespace InternTestProject.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201706131808343_initial"; }
+            get { return "201706141330444_initial"; }
         }
         
         string IMigrationMetadata.Source

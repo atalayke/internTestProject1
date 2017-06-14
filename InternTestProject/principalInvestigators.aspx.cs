@@ -49,8 +49,8 @@ namespace InternTestProject
         {
             using(GrantsContext db = new GrantsContext())
             {
-                var item = new { PI_ID = pi_id };
-                db.Entry(item).State = EntityState.Deleted;
+                //var item = new { PI_ID = pi_id };
+                db.Entry(db.Investigators.Find(pi_id)).State = EntityState.Deleted;
                 try
                 {
                     db.SaveChanges();

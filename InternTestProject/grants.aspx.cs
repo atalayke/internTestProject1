@@ -24,16 +24,16 @@ namespace InternTestProject
             return query;
         }
 
-        public void grantsGrid_UpdateItem(int gNum)
+        public void grantsGrid_UpdateItem(int GrantNum)
         {
             using (GrantsContext db = new GrantsContext())
             {
                 Grant item = null;
-                item = db.Grants.Find(gNum);
+                item = db.Grants.Find(GrantNum);
                 if(item == null)
                 {
                     ModelState.AddModelError("",
-                        String.Format("Item with id {0} was not found", gNum));
+                        String.Format("Item with id {0} was not found", GrantNum));
                     return;
                 }
 
@@ -45,12 +45,11 @@ namespace InternTestProject
             }
         }
 
-        public void piGrid_DeleteItem(int gNum)
+        public void grantsGrid_DeleteItem(int GrantNum)
         {
             using (GrantsContext db = new GrantsContext())
             {
-                var item = new { GrantNum = gNum };
-                db.Entry(item).State = EntityState.Deleted;
+                db.Entry(db.Grants.Find(GrantNum)).State = EntityState.Deleted;
                 try
                 {
                     db.SaveChanges();
@@ -58,7 +57,7 @@ namespace InternTestProject
                 catch(DbUpdateConcurrencyException)
                 {
                     ModelState.AddModelError("",
-                        String.Format("Item with id {0} no longer exists in database", gNum));
+                        String.Format("Item with id {0} no longer exists in database", GrantNum));
                 }
             }
         }

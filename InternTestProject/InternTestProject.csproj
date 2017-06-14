@@ -474,9 +474,9 @@
     <Compile Include="grants.aspx.designer.cs">
       <DependentUpon>grants.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706131808343_initial.cs" />
-    <Compile Include="Migrations\201706131808343_initial.Designer.cs">
-      <DependentUpon>201706131808343_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201706141330444_initial.cs" />
+    <Compile Include="Migrations\201706141330444_initial.Designer.cs">
+      <DependentUpon>201706141330444_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GrantsModels.cs" />
@@ -523,8 +523,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706131808343_initial.resx">
-      <DependentUpon>201706131808343_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706141330444_initial.resx">
+      <DependentUpon>201706141330444_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="grants.aspx.cs" Inherits="InternTestProject.grants" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:HyperLink NavigateUrl="~/AddNewGrant" Text="Add New Grat" runat="server"</asp:HyperLink>
+    <asp:HyperLink NavigateUrl="~/AddGrant" Text="Add New Grant" runat="server"></asp:HyperLink>
     <asp:GridView runat="server" ID="grantsGrid"
         ItemType="InternTestProject.Models.Grant"
         DataKeyNames="GrantNum"

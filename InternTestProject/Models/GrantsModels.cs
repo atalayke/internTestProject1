@@ -17,23 +17,24 @@ namespace InternTestProject.Models
     public class Grant
     {
         [Key, Display(Name = "GrantNumber")]
-        [ScaffoldColumn(false)]
         public int GrantNum { get; set; }
-
         [Required, StringLength(80), Display(Name = "FundedResearch")]
         public string FundedResrch { get; set; }
-
         [StringLength(40), Display(Name = "PI")]
         public string PrincInvest { get; set; }
     }
 
     public class Investigator
     {
-        [Key]
+        [Key, Display(Name="InvestigatorID")]
         public int PI_ID { get; set; }
+        [Required, StringLength(40)]
         public string FirstName { get; set; }
+        [Required, StringLength(40)]
         public string LastName { get; set; }
+        [Required, StringLength(80)]
         public string Institution { get; set; }
+        [Required, StringLength(80)]
         public string Research { get; set; }
     }
 }

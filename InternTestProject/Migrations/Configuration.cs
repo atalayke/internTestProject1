@@ -18,13 +18,13 @@ namespace InternTestProject.Migrations
             context.Grants.AddOrUpdate(
                 new Grant
                 {
-                    GrantNum = 1234,
+                    //GrantNum = 1234,
                     FundedResrch = "Sleep Apnea",
                     PrincInvest = "John Doe"
                 },
                 new Grant
                 {
-                    GrantNum = 6789,
+                    //GrantNum = 6789,
                     FundedResrch = "Asthma",
                     PrincInvest = "Mary Jane"
                 }
@@ -34,13 +34,13 @@ namespace InternTestProject.Migrations
 
             context.Investigators.AddOrUpdate(
                 new Investigator {
-                    PI_ID = 0000,
+                    //PI_ID = 0000,
                     FirstName = "John",
                     LastName = "Doe",
                     Institution = "UMD",
                     Research = "Sleep Disorders" },
                 new Investigator {
-                    PI_ID = 0001,
+                    //PI_ID = 0001,
                     FirstName = "Mary",
                     LastName = "Jane",
                     Institution = "Georgia Tech",

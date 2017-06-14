@@ -22,10 +22,10 @@ namespace InternTestProject.Migrations
                 c => new
                     {
                         PI_ID = c.Int(nullable: false, identity: true),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        Institution = c.String(),
-                        Research = c.String(),
+                        FirstName = c.String(nullable: false, maxLength: 40),
+                        LastName = c.String(nullable: false, maxLength: 40),
+                        Institution = c.String(nullable: false, maxLength: 80),
+                        Research = c.String(nullable: false, maxLength: 80),
                     })
                 .PrimaryKey(t => t.PI_ID);
             

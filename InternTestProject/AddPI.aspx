@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddPI.aspx.cs" Inherits="InternTestProject.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ValidationSummary runat="server" ShowModelStateErrors="true" />
-    <asp:FormView runat="server" ID="addStudentForm"
+    <asp:FormView runat="server" ID="addInvestigatorForm"
         ItemType="InternTestProject.Models.Investigator"
         InsertMethod="addPIForm_InsertItem" DefaultMode="Insert"
         RenderOuterTable="false" OnItemInserted="addPIForm_ItemInserted">
